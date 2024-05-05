@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QLCH_LTHDT_Entities\QLCH_LTHDT_Entities.csproj" />
+    <ProjectReference Include="..\QLCH_LTHDT_Repo\QLCH_LTHDT_Repo.csproj" />
+  </ItemGroup>
+
+</Project>

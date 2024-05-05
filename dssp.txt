@@ -1,0 +1,4 @@
+2
+1,Scrub Daddy,12/12/2050,Scrub Daddy,23/12/2023,Miếng rửa chén,165000
+2,Perfectils,12/12/2035,Vitabiotics,23/12/2026,Thực Phẩm Chức năng,275000
+

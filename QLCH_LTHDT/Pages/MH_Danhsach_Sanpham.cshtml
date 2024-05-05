@@ -1,0 +1,45 @@
+﻿@page
+@model QLCH_LTHDT_WEB.Pages.MH_Danhsach_SanphamModel
+@using QLCH_LTHDT_Entities
+
+@{
+}
+<form method="post">
+    <label for="fname">Nhập vào:</label><br>
+    <input type="text" id="fname" name="tukhoa" value=""><br>
+    
+    <input type="submit" value="Tìm Kiếm">
+   
+</form>
+<div>
+    <a href="MH_Them_Sanpham">Thêm</a>
+</div>
+
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Hạn sử dụng</th>
+            <th>Công ty sản xuất</th>
+            <th>Ngày sản xuất</th>
+            <th>Loại hàng</th>
+            <th>Giá</th>
+        </tr>
+        @foreach (Sanpham sp in Model.Danhsachsanpham)
+        {
+        <tr>
+                <td>@sp.Masanpham</td>
+                <td>@sp.Tensanpham</td>
+                <td>@sp.Hsd</td>
+                <td>@sp.Congtysanxuat</td>
+                <td>@sp.Ngaysanxuat</td>
+                <td>@sp.Loaihang</td>
+                <td>@sp.Gia</td>
+
+        </tr>
+        }
+    </table>
+</div>
+
+            @Model.Chuoi
