@@ -33,5 +33,14 @@ namespace QLCH_LTHDT_Services
                 sanpham.Masanpham = maxId + 1;
                 _luutrusanpham.Themsanpham(sanpham);
             }
+                 public void Xoasanpham(Sanpham sanpham)
+        {
+            var dssp = _luutrusanpham.Docdanhsachsanpham();
+            for (sanpham.Masanpham = 0; sanpham.Masanpham < dssp.Count - 1; sanpham.Masanpham++)
+            {
+                var itemToRemove = dssp.SingleOrDefault(item => item.Masanpham == sanpham.Masanpham);
+                _luutrusanpham.Xoasanpham(sanpham);
+            }
         }
     }
+}
