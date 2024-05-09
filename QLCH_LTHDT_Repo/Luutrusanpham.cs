@@ -41,6 +41,13 @@ namespace QLCH_LTHDT_Repo
             dssp.Add(sanpham);
             Luudanhsachsanpham(dssp);
         }
+         public void Xoasanpham(Sanpham sanpham)
+        {
+            var dssp = Docdanhsachsanpham();
+            dssp.Remove(sanpham);
+            Luudanhsachsanpham(dssp);
+        }
+
         }
 
     }
